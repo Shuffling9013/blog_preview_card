@@ -1,0 +1,88 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  --font-family: Figtree, Arial, Helvetica, sans-serif;
+  --font-size: calc(16px + 1vw);
+}
+
+@font-face {
+  font-family: Figtree;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url("../public/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-inline: 1em;
+
+  height: 100%;
+  background-color: var(--yellow);
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 500;
+  color: var(--gray-950);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  padding: 1em;
+  max-width: 32rem;
+
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 0;
+  background-color: var(--white);
+}
+
+.container picture {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container .labels button {
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: 0;
+  background-color: var(--yellow);
+  font-weight: 800;
+}
+
+.container time {
+  font-size: 0.7em;
+}
+
+.container picture img {
+  width: 100%;
+}
+
+.container h1 {
+  font-size: 1.1em;
+  font-weight: 800;
+}
+
+.container p {
+  font-size: 0.8em;
+  color: var(--gray-500);
+}
+
+.container .avatar {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+
+  font-weight: 800;
+}
+
+.container .avatar img {
+  height: 2em;
+}

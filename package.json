@@ -1,0 +1,14 @@
+{
+  "name": "blog_preview_card",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "bun scripts/dev_server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
